@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="129" height="68" viewBox="0 0 129 68">
+  <g id="Logo-min" transform="translate(0 -9.883)">
+    <g id="Сгруппировать_105" data-name="Сгруппировать 105">
+      <g id="Прямоугольник_41" data-name="Прямоугольник 41" transform="translate(0 9.883)" fill="#275988" stroke="#275988" stroke-width="5">
+        <rect width="73" height="68" stroke="none"/>
+        <rect x="2.5" y="2.5" width="68" height="63" fill="none"/>
+      </g>
+      <path id="Контур_88" data-name="Контур 88" d="M27.221,0l-.138-48.3H17.906L.1-18.285-17.974-48.3H-27.22V0h10.488V-28.359L-2.587-5.106H2.45L16.664-28.98,16.733,0Z" transform="translate(36.221 68.183)" fill="#fff"/>
+    </g>
+    <g id="Сгруппировать_106" data-name="Сгруппировать 106" transform="translate(73 1)">
+      <g id="Прямоугольник_41-2" data-name="Прямоугольник 41" transform="translate(0 8.883)" fill="#d92928" stroke="#d92928" stroke-width="5">
+        <rect width="56" height="68" stroke="none"/>
+        <rect x="2.5" y="2.5" width="51" height="63" fill="none"/>
+      </g>
+      <path id="Контур_87" data-name="Контур 87" d="M-.4.8C13,.8,19.5-5.9,19.5-13.735c0-17.219-27.269-11.256-27.269-19.9,0-2.948,2.479-5.36,8.911-5.36a26.489,26.489,0,0,1,13,3.685l3.35-8.241C13.132-46.3,7.1-47.7,1.206-47.7c-13.333,0-19.765,6.633-19.765,14.606,0,17.42,27.269,11.39,27.269,20.167C8.71-10.05,6.1-7.906-.335-7.906A27.587,27.587,0,0,1-15.812-12.8L-19.5-4.623C-15.343-1.407-7.839.8-.4.8Z" transform="translate(28.497 66.587)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

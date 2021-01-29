@@ -363,7 +363,7 @@ body {
     &__row {
         display: flex;
         padding: 52px 42px;
-        background: url(/img/back-angle.png) center/ cover no-repeat;
+        background: url(../img/back-angle.png) center/ cover no-repeat;
         margin-bottom: 42px;
         @media (max-width: $break2) {
             padding: 39px 30px;
@@ -379,7 +379,7 @@ body {
         }
         @media (max-width: $break1) {
             display: none;
-            background: url(/img/back-angle.png) 0 -2000px / cover no-repeat;
+            background: url(../img/back-angle.png) 0 -2000px / cover no-repeat;
         }
     }
     &__caption {
@@ -435,7 +435,7 @@ body {
         text-align: center;
         padding: 52px;
         color: #fff;
-        background: url(/img/slide-back.png) -50% 0 / 100% no-repeat;
+        background: url(../img/slide-back.png) -50% 0 / 100% no-repeat;
         @media (max-width: $break1) {
             padding: 52px 27px;
         }
@@ -734,7 +734,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: url(/img/cart-back.jpg) left / 90% no-repeat; //cover
+    background: url(../img/cart-back.jpg) left / 90% no-repeat; //cover
     background-color: #feb71d;
     color: #292929;
     transition: all 0.3s ease;
@@ -783,7 +783,7 @@ body {
 .price {
     $break1: 1087px;
 
-    background: url(/img/price-back.jpg) 0 0 / cover no-repeat;
+    background: url(../img/price-back.jpg) 0 0 / cover no-repeat;
     &__body {
         display: flex;
         flex-direction: column;
@@ -1138,7 +1138,7 @@ $qustionBreak: 520px;
     $break1: 647px;
     $break2: 500px;
     padding: 25px 15px;
-    background: #ffffff url("/img/contact-form.webp") 20px 0/113px 5px repeat-x;
+    background: #ffffff url("../img/contact-form.webp") 20px 0/113px 5px repeat-x;
     display: flex;
     flex-direction: column;
 
@@ -1339,7 +1339,7 @@ $qustionBreak: 520px;
 .footer {
     $break1: 850px;
     $break2: 384px;
-    background: url(/img/footer-back-2.jpg) 0 0 / cover no-repeat;
+    background: url(../img/footer-back-2.jpg) 0 0 / cover no-repeat;
     &__title {
         color: #fff;
         font-size: 32px;

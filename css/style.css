@@ -545,7 +545,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 52px 42px;
-  background: url(/img/back-angle.png) center/cover no-repeat;
+  background: url(../img/back-angle.png) center/cover no-repeat;
   margin-bottom: 42px;
 }
 
@@ -572,7 +572,7 @@ body {
 @media (max-width: 767px) {
   .hello__logo-min {
     display: none;
-    background: url(/img/back-angle.png) 0 -2000px/cover no-repeat;
+    background: url(../img/back-angle.png) 0 -2000px/cover no-repeat;
   }
 }
 
@@ -671,7 +671,7 @@ body {
   text-align: center;
   padding: 52px;
   color: #fff;
-  background: url(/img/slide-back.png) -50% 0/100% no-repeat;
+  background: url(../img/slide-back.png) -50% 0/100% no-repeat;
 }
 
 @media (max-width: 740px) {
@@ -1122,7 +1122,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url(/img/cart-back.jpg) left/90% no-repeat;
+  background: url(../img/cart-back.jpg) left/90% no-repeat;
   background-color: #feb71d;
   color: #292929;
   -webkit-transition: all 0.3s ease;
@@ -1179,7 +1179,7 @@ body {
 }
 
 .price {
-  background: url(/img/price-back.jpg) 0 0/cover no-repeat;
+  background: url(../img/price-back.jpg) 0 0/cover no-repeat;
 }
 
 .price__body {
@@ -1680,7 +1680,7 @@ body {
 
 .letter {
   padding: 25px 15px;
-  background: #ffffff url("/img/contact-form.webp") 20px 0/113px 5px repeat-x;
+  background: #ffffff url("../img/contact-form.webp") 20px 0/113px 5px repeat-x;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1982,7 +1982,7 @@ body {
 /*#endregion */
 /*#region =====================================Подвал*/
 .footer {
-  background: url(/img/footer-back-2.jpg) 0 0/cover no-repeat;
+  background: url(../img/footer-back-2.jpg) 0 0/cover no-repeat;
 }
 
 .footer__title {

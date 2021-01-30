@@ -356,7 +356,7 @@ body {
 }
 /*#endregion */
 
-/*#region =====================================Главный слацдер*/
+/*#region =====================================Главный Слацдер*/
 
 .hello {
     $break1: 767px;
@@ -596,7 +596,7 @@ body {
 }
 /*#endregion */
 
-/*#region =====================================Секция услуги*/
+/*#region =====================================Секция Услуги*/
 
 .service {
     $break1: 1270px;
@@ -673,7 +673,7 @@ body {
 }
 /*#endregion */
 
-/*#region =====================================Секуия прайс*/
+/*#region =====================================Секуия Прайс*/
 
 .card-price {
     $break1: 520px;
@@ -837,7 +837,7 @@ body {
             margin: 0 auto;
         }
         @media (max-width: $break2) {
-            max-width: 320px;
+            max-width: 350px;
             margin-bottom: 33px;
         }
     }
@@ -861,7 +861,8 @@ body {
 
         @media (max-width: $break2) {
             flex: 0 1 100%;
-            margin: 0px 0 54px 0;
+            // margin: 0px 0 54px 0;
+            margin: 0px 0 60px 0;
         }
     }
 
@@ -870,7 +871,8 @@ body {
         color: #000000;
         line-height: 24px;
         font-weight: 500;
-        @include adaptiv-value(font-size, 19, 15, 1);
+        @include adaptiv-value(font-size, 19, 17, 1);
+        //font-size: 19px;
     }
 }
 /*#endregion */

@@ -533,7 +533,7 @@ body {
 }
 
 /*#endregion */
-/*#region =====================================Главный слацдер*/
+/*#region =====================================Главный Слацдер*/
 .hello__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -902,7 +902,7 @@ body {
 }
 
 /*#endregion */
-/*#region =====================================Секция услуги*/
+/*#region =====================================Секция Услуги*/
 .service__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1034,7 +1034,7 @@ body {
 }
 
 /*#endregion */
-/*#region =====================================Секуия прайс*/
+/*#region =====================================Секуия Прайс*/
 .card-price {
   background-color: #d92928;
   border-radius: 16px;
@@ -1269,7 +1269,7 @@ body {
 
 @media (max-width: 596px) {
   .benefits__body {
-    max-width: 320px;
+    max-width: 350px;
     margin-bottom: 33px;
   }
 }
@@ -1323,7 +1323,7 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
-    margin: 0px 0 54px 0;
+    margin: 0px 0 60px 0;
   }
 }
 
@@ -1337,7 +1337,7 @@ body {
 
 @media (max-width: 1290px) {
   .benefits__description {
-    font-size: calc(15px + 4 * ((100vw - 320px) / 970));
+    font-size: calc(17px + 2 * ((100vw - 320px) / 970));
   }
 }
 

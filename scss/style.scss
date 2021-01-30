@@ -170,8 +170,8 @@ body {
 /*#region =====================================Шапка*/
 
 .header {
-    $break1: 1450px;
-    $break2: 1024px;
+    $break1: 1500px; //1450px;;
+    $break2: 1100px; //1024px;
     $break3: 874px;
     $break4: 767px;
     position: fixed;
@@ -199,10 +199,10 @@ body {
         padding: 0 50px; //0 15px
         justify-content: space-between;
         align-items: center;
-        @media (max-width: $break2) {
+        @media (max-width: $break1) {
             padding: 0 15px;
         }
-        @media (max-width: $break3) {
+        @media (max-width: $break2) {
             padding: 15px;
             flex-direction: column;
         }
@@ -223,17 +223,20 @@ body {
             max-width: 100%;
             overflow: hidden;
         }
-        @media (max-width: $break3) {
+        @media (max-width: $break2) {
             flex: 0 1 0;
-            margin-right: 15px;
+            //margin-right: 15px;
             img {
-                height: 46px;
+                height: 42px;
             }
         }
         @media (max-width: $break4) {
             flex: 0 1 500px;
             padding-top: 0px;
             margin-right: 15px;
+            img {
+                height: 46px;
+            }
         }
     }
 
@@ -273,16 +276,18 @@ body {
         color: #707070;
         font-weight: 600;
 
-        margin-left: 45px;
+        margin-left: 36px;
         transition: color 0.3s;
         @media (max-width: $break1) {
-            margin-left: 30px;
+            margin-left: 27px;
         }
+
         @media (max-width: $break2) {
-            margin-left: 21px;
+            margin: 0 9px;
         }
         @media (max-width: $break3) {
-            margin: 0 9px;
+            margin: 0 7px;
+            font-size: 13.5px;
         }
         @media (min-width: $break4) {
             &:hover {
@@ -291,6 +296,7 @@ body {
         }
 
         @media (max-width: $break4) {
+            font-size: 15px;
             margin: 30px 20px;
             display: block;
         }
@@ -658,7 +664,6 @@ body {
 
         @media (max-width: $break3) {
             padding: 12px;
-            font-weight: 600;
             i {
                 font-weight: 400;
                 min-width: 45px;
@@ -819,7 +824,6 @@ body {
 /*#endregion */
 
 /*#region =====================================Секуия Приимущества*/
-
 .benefits {
     $break1: 1137px;
     $break2: 596px;
@@ -864,15 +868,13 @@ body {
     &__description {
         text-align: center;
         color: #000000;
-        font-size: 19px;
         line-height: 24px;
         font-weight: 500;
         @include adaptiv-value(font-size, 19, 15, 1);
-        @media (max-width: $break1) {
-        }
     }
 }
 /*#endregion */
+
 /*#region =====================================Секуия Мы ремонтируем*/
 
 .fix {
@@ -1328,6 +1330,7 @@ $qustionBreak: 520px;
     }
 }
 /*#endregion */
+
 /*#region =====================================Секуия Карта*/
 .map {
     &__gooole-map {
@@ -1335,6 +1338,7 @@ $qustionBreak: 520px;
     }
 }
 /*#endregion */
+
 /*#region =====================================Подвал*/
 .footer {
     $break1: 850px;
@@ -1342,9 +1346,12 @@ $qustionBreak: 520px;
     background: url(../img/footer-back-2.jpg) 0 0 / cover no-repeat;
     &__title {
         color: #fff;
-        font-size: 32px;
+        //  font-size: 32px;
+        @include adaptiv-value(font-size, 32, 27, 1);
+        @include adaptiv-value(padding-bottom, 51, 42, 1);
+        @include adaptiv-value(padding-top, 51, 42, 1);
         font-weight: 700;
-        padding: 52px 0;
+        //padding: 52px 0;
         text-transform: uppercase;
     }
 
@@ -1374,19 +1381,22 @@ $qustionBreak: 520px;
         display: flex;
         color: #fff;
         i {
-            font-size: 27px;
+            // font-size: 27px;
+            @include adaptiv-value(font-size, 27, 24, 1);
             text-align: left;
-            min-width: 46px;
+            // min-width: 46px;
+            @include adaptiv-value(min-width, 45, 39, 1);
         }
         .icon-mail {
-            font-size: 24px;
+            //font-size: 24px;
+            @include adaptiv-value(font-size, 24, 21, 1);
         }
-        margin-bottom: 27px;
+        margin-bottom: 24px;
         @media (max-width: $break2) {
             i {
-                font-size: 24px;
+                // font-size: 24px;
                 text-align: left;
-                min-width: 39px;
+                //min-width: 39px;
             }
             .icon-mail {
                 font-size: 21px;
@@ -1404,8 +1414,11 @@ $qustionBreak: 520px;
     }
 
     &__social {
-        font-size: 36px;
-        margin-top: 72px;
+        // font-size: 36px;
+        @include adaptiv-value(font-size, 36, 33, 1);
+        // margin-top: 72px;
+        @include adaptiv-value(margin-top, 72, 46, 1);
+
         a {
             color: #fff;
             margin-right: 18px;
@@ -1415,8 +1428,8 @@ $qustionBreak: 520px;
             }
         }
         @media (max-width: $break2) {
-            font-size: 33px;
-            margin-top: 46px;
+            // font-size: 33px;
+            // margin-top: 46px;
         }
     }
 

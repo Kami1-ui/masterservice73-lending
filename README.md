@@ -1,1 +1,1 @@
-GitPages https://kamilprogram.github.io/masterservice73.github.io/#contacts
+GitPages https://kamilprogram.github.io/masterservice73.github.io/

@@ -49,9 +49,9 @@ $maxWidthContainer: 1290;
 .loading-whell {
     width: 100px;
     height: 100px;
-    border: 8px solid #eff0f3;
+    border: 3px solid transparent;
     border-radius: 50%;
-    border-top-color: #d92928; //#275988;
+    border-top-color: #275988; //#d92928;
     animation: 2s spin infinite linear;
 }
 
@@ -121,7 +121,7 @@ body {
     flex: 1 1 auto;
     padding: $headerHeight 0px 0px 0px;
 
-    @media (max-width: 767px) {
+    @media (max-width: 874px) {
         padding: 80px 0px 0px 0px;
     }
 }
@@ -173,7 +173,7 @@ body {
     $break1: 1500px; //1450px;;
     $break2: 1100px; //1024px;
     $break3: 874px;
-    $break4: 767px;
+    $break4: 874px; //767px;
     position: fixed;
     top: 0;
     left: 0;
@@ -285,10 +285,10 @@ body {
         @media (max-width: $break2) {
             margin: 0 9px;
         }
-        @media (max-width: $break3) {
+        /*   @media (max-width: $break3) {
             margin: 0 7px;
             font-size: 13.5px;
-        }
+        }*/
         @media (min-width: $break4) {
             &:hover {
                 color: #275988;
@@ -296,7 +296,7 @@ body {
         }
 
         @media (max-width: $break4) {
-            font-size: 15px;
+            font-size: 16px;
             margin: 30px 20px;
             display: block;
         }
@@ -557,7 +557,7 @@ body {
 
         @media (min-width: 768px) {
             & li button:hover {
-                border: 6px solid #fffefe;
+                border: 9px solid #fffefe;
                 background-color: #d92928;
             }
         }
@@ -647,12 +647,12 @@ body {
         @include adaptiv-value(line-height, 28, 21, 1);
 
         i {
-            @include adaptiv-value(font-size, 48, 33, 1);
+            @include adaptiv-value(font-size, 40, 33, 1);
             min-width: 58px;
         }
         .icon-transit,
         .icon-engine {
-            @include adaptiv-value(font-size, 39, 27, 1);
+            @include adaptiv-value(font-size, 36, 27, 1);
         }
 
         &:hover {
@@ -682,8 +682,9 @@ body {
     align-self: start;
     padding: 51px 24px;
     transition: all 0.3s ease;
+    min-height: 190px;
     &:hover {
-        background-color: #292929;
+        // background-color: #292929;
     }
     &__row {
         display: flex;
@@ -727,6 +728,11 @@ body {
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 1px;
+        position: relative;
+        transition: font-size 0.18s ease;
+        &:hover {
+            font-size: 34px;
+        }
     }
 }
 
@@ -814,7 +820,7 @@ body {
         transition: all 0.3s ease;
 
         &:hover {
-            transform: scale(1.05);
+            //  transform: scale(1.05);
         }
         @media (max-width: $break1) {
             flex: 0 1 700px;
@@ -1125,7 +1131,8 @@ body {
 /*#endregion */
 
 /*#region =====================================Секуия Обратная связь*/
-$qustionBreak: 520px;
+$qustionBreak: 10520px;
+
 @media (min-width: $qustionBreak) {
     .qustion-header-item {
         display: none;

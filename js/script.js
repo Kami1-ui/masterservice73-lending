@@ -135,10 +135,10 @@ $(document).ready(function () {
 $(document).ready(function () {
 
     $('.partners__slider').slick({
-        arrows: true,
+        arrows: false,
         prevArrow: '<button type="button" class="slick-prev"><i class="icon-left"></i></button>',
         nextArrow: '<button type="button" class="slick-next"><i class="icon-right"></i></button>',
-        //dots: true,
+        dots: true,
         //adeptiveHight: true, flex-start
         slidesToShow: 6,
         slidesToScroll: 3,
@@ -167,7 +167,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 425,//576,
+                breakpoint: 375,//576,
                 settings: {
                     slidesToShow: 2,
                     // dots: true,

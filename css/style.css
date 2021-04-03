@@ -835,8 +835,8 @@ body {
 .carusel .slick-dots li button {
   border-radius: 50%;
   font-size: 0;
-  width: 36px;
-  height: 36px;
+  width: 27px;
+  height: 27px;
   border: 6px solid #fefefe;
   background-color: transparent;
   -webkit-transition: all 0.1s ease;
@@ -1098,8 +1098,8 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   position: relative;
-  -webkit-transition: font-size 0.18s ease;
-  transition: font-size 0.18s ease;
+  -webkit-transition: all 0.18s ease;
+  transition: all 0.18s ease;
 }
 
 @media (max-width: 1290px) {
@@ -1108,8 +1108,15 @@ body {
   }
 }
 
-.card-price__title:hover {
-  font-size: 34px;
+@media (min-width: 767px) {
+  .card-price__title:hover {
+    -webkit-transform: translate(0, -15%);
+            transform: translate(0, -15%);
+  }
+}
+
+.card-engine {
+  background-color: #275988;
 }
 
 .card-qustion {
@@ -1211,9 +1218,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin: -15px;
 }
 
@@ -1232,6 +1236,7 @@ body {
   padding: 30px 15px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  margin-right: 52px;
 }
 
 @media (max-width: 1087px) {
@@ -1664,13 +1669,13 @@ body {
 
 /*#endregion */
 /*#region =====================================Секуия Обратная связь*/
-@media (min-width: 10520px) {
+@media (min-width: 520px) {
   .qustion-header-item {
     display: none;
   }
 }
 
-@media (max-width: 10520px) {
+@media (max-width: 520px) {
   .card-qustion {
     display: none;
   }
@@ -1686,6 +1691,26 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+}
+
+.letter::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7) url(../img/loading.gif) center/50px no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.letter._sending::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 .letter .hide {
@@ -1778,7 +1803,7 @@ body {
 }
 
 @media (max-width: 647px) {
-  .letter .topic {
+  .letter .subject {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
@@ -1828,7 +1853,11 @@ body {
   padding: 8px;
 }
 
-.letter__mess {
+.letter__input._error {
+  border-color: red;
+}
+
+.letter__message {
   margin: 0 7.5px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 62%;
@@ -1914,6 +1943,69 @@ body {
   font-size: 16px;
   text-transform: none;
   padding: 16px 28px;
+}
+
+.letter__agreement {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.letter__agreement._error .letter__checkbox-lable::before {
+  -webkit-box-shadow: 0 0 8px red;
+          box-shadow: 0 0 8px red;
+}
+
+.letter__checkbox-input {
+  display: none;
+}
+
+.letter__checkbox-input:checked + .letter__checkbox-lable::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.letter__checkbox-lable {
+  color: #707070;
+  font-size: 15px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.letter__checkbox-lable::before {
+  content: "";
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 24px;
+          flex: 0 0 24px;
+  height: 24px;
+  background-color: #ccc;
+  border-radius: 4px;
+  margin: 0 10px 0 0;
+}
+
+.letter__checkbox-lable::after {
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background-color: #275988;
+  border-radius: 4px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 .qustion {

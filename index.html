@@ -159,18 +159,35 @@
                                             <i class="icon-clock"></i>09.05.2020
                                         </div>
                                         <div class="card-price__lable">
+                                            <a href="/price_engine.pdf" download>
+                                                <i class="icon-download"></i>скачать
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-price__title">
+                                        <a href="/price_engine.pdf" target="newframe">Двигатели</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="price__card">
+                                <div class="card-price card-engine">
+                                    <div class="card-price__row">
+                                        <div class="card-price__lable">
+                                            <i class="icon-clock"></i>09.05.2020
+                                        </div>
+                                        <div class="card-price__lable">
                                             <a href="/price.pdf" download>
                                                 <i class="icon-download"></i>скачать
                                             </a>
                                         </div>
                                     </div>
                                     <div class="card-price__title">
-                                        <a href="/price.pdf" target="newframe"> Прайс услуг</a>
+                                        <a href="/price.pdf" target="newframe">Инструмент</a>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class=" price__card">
+                            <!--  <div class=" price__card">
                                 <a href="#qustion">
                                     <div class="card-qustion">
                                         <div class="card-qustion__title">Появились вопросы?</div>
@@ -178,8 +195,7 @@
                                         <i class="icon-double-right"></i>
                                     </div>
                                 </a>
-                            </div>
-
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -583,43 +599,51 @@
                             <img src="img/question.svg" alt="Задайте нам вопрос">
                         </div>
                         <div class="qustion__letter">
-                            <form class="letter">
+                            <form class="letter" id="form">
                                 <div class="letter__title">Отправить сообщение</div>
                                 <div class="letter__row">
-
                                     <div class="letter__contacts">
-                                        <div class="letter__text-input topic">
-                                            <div class="letter__lable ">Тема</div>
-                                            <input class="letter__input" type="text" />
+                                        <div class="letter__text-input subject">
+                                            <label class="letter__lable" for="formSubject">Тема</label>
+                                            <input class="letter__input _req" id="formSubject" type="text"
+                                                name="subject" />
                                         </div>
                                         <div class="letter__text-input name">
-                                            <div class="letter__lable ">Имя</div>
-                                            <input class="letter__input" type="text" />
+                                            <label class="letter__lable" for="formName">Имя</label>
+                                            <input class="letter__input _req" id="formName" type="text" name="name" />
                                         </div>
                                         <div class="letter__text-input mail">
-                                            <div class="letter__lable">E-mail</div>
-                                            <input class="letter__input " type="text" />
+                                            <lable class="letter__lable" for="formMail">E-mail</lable>
+                                            <input class="letter__input _req _email" id="formMail" type="text"
+                                                name="mail" />
                                         </div>
                                     </div>
 
-                                    <div class="letter__mess">
+                                    <div class="letter__message">
                                         <div class="letter__text-textarea">
-                                            <div class="letter__lable">Сообщение</div>
-                                            <textarea class="letter__textarea" name="textarea"></textarea>
+                                            <lable class="letter__lable" for="formMessage">Сообщение</lable>
+                                            <textarea class="letter__textarea" id="formMessage"
+                                                name="message"></textarea>
                                         </div>
                                     </div>
                                 </div>
-
+                                <div class="letter__agreement">
+                                    <input id="formAgreement" checked type="checkbox" name="agreement"
+                                        class="letter__checkbox-input _req">
+                                    <label for="formAgreement" class="letter__checkbox-lable">Я даю ссогласие на
+                                        обработку
+                                        персональных данных</label>
+                                </div>
                                 <div class="letter__input-file">
                                     <div class="letter__lable">Прикрепить файл </div>
                                     <div class="letter__load">
-                                        <input type="file" name="file" id="file" class="letter__input-path hide" />
-                                        <label for="file"><span class="path">Файл не выбран</span>
+                                        <input type="file" name="file" id="formFile" class="letter__input-path hide" />
+                                        <label for="formFile"><span class="path">Файл не выбран</span>
                                             <span class="btn">Выбрать</span>
                                         </label>
                                     </div>
                                 </div>
-                                <a class="letter__btn btn-blue" href="#hello">Отправить</a>
+                                <button type="submit" class="letter__btn btn-blue">Отправить</button>
                             </form>
                         </div>
                     </div>
@@ -627,14 +651,14 @@
 
             </section>
             <section id="map" class="map">
-                <div class="map__gooole-map">
+                <!--  <div class="map__gooole-map">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2329.551350183225!2d48.28094441587375!3d54.27651398018446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415d3418a3498a03%3A0x6faa0e2f2e9c0e13!2z0JrQsNC80YvRiNC40L3RgdC60LDRjyDRg9C7LiwgNDAsINCj0LvRjNGP0L3QvtCy0YHQuiwg0KPQu9GM0Y_QvdC-0LLRgdC60LDRjyDQvtCx0LsuLCA0MzIwNTQ!5e0!3m2!1sru!2sru!4v1590165725322!5m2!1sru!2sru"
                         frameborder="0" style="border:0;" allowfullscreen="" width="100%" height="100%"
                         aria-hidden="false" tabindex="0"></iframe>
 
 
-                </div>
+                </div>-->
                 <!-- <div style="position:relative;overflow:hidden;"><a
                         href="https://yandex.ru/maps/org/mastercervise73/1780062637/?utm_medium=mapframe&utm_source=maps"
                         style="color:#eee;font-size:12px;position:absolute;top:0px;">Mastercervise73</a>
@@ -692,6 +716,7 @@
             </div>
         </footer>
     </div>
+
     <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
     <script src='js/slick.min.js'></script>
     <script src='js/script.js'></script>

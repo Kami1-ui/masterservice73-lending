@@ -543,8 +543,8 @@ body {
         & li button {
             border-radius: 50%;
             font-size: 0;
-            width: 36px;
-            height: 36px;
+            width: 27px; //36px;
+            height: 27px;
             border: 6px solid #fefefe;
             background-color: transparent;
             transition: all 0.1s ease;
@@ -674,7 +674,6 @@ body {
 /*#endregion */
 
 /*#region =====================================Секуия Прайс*/
-
 .card-price {
     $break1: 520px;
     background-color: #d92928;
@@ -729,11 +728,17 @@ body {
         text-transform: uppercase;
         letter-spacing: 1px;
         position: relative;
-        transition: font-size 0.18s ease;
+        transition: all 0.18s ease;
         &:hover {
-            font-size: 34px;
+            @media (min-width: 767px) {
+                transform: translate(0, -15%);
+                //   @include adaptiv-value(font-size, 34, 29, 1);
+            }
         }
     }
+}
+.card-engine {
+    background-color: #275988;
 }
 
 .card-qustion {
@@ -807,7 +812,7 @@ body {
     &__row {
         max-width: 1120px;
         display: flex;
-        justify-content: space-between;
+        //justify-content: space-between;
         margin: -15px;
         @media (max-width: $break1) {
             justify-content: center;
@@ -818,7 +823,7 @@ body {
     &__card {
         padding: 30px 15px;
         transition: all 0.3s ease;
-
+        margin-right: 52px;
         &:hover {
             //  transform: scale(1.05);
         }
@@ -1131,7 +1136,7 @@ body {
 /*#endregion */
 
 /*#region =====================================Секуия Обратная связь*/
-$qustionBreak: 10520px;
+$qustionBreak: 520px;
 
 @media (min-width: $qustionBreak) {
     .qustion-header-item {
@@ -1152,7 +1157,25 @@ $qustionBreak: 10520px;
     background: #ffffff url("../img/contact-form.webp") 20px 0/113px 5px repeat-x;
     display: flex;
     flex-direction: column;
+    position: relative;
 
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($color: #fff, $alpha: 0.7) url(../img/loading.gif) center / 50px no-repeat;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease 0s;
+    }
+
+    &._sending::after {
+        opacity: 1;
+        visibility: visible;
+    }
     .hide {
         width: 0.1px;
         height: 0.1px;
@@ -1203,7 +1226,7 @@ $qustionBreak: 10520px;
     }
 
     @media (max-width: $break1) {
-        .topic {
+        .subject {
             flex: 1 1 auto;
             order: 3;
         }
@@ -1239,9 +1262,13 @@ $qustionBreak: 10520px;
         border: 2px solid #bebebe;
         background-color: #ffffff;
         padding: 8px;
+
+        &._error {
+            border-color: red;
+        }
     }
 
-    &__mess {
+    &__message {
         margin: 0 7.5px;
         flex: 0 0 62%;
     }
@@ -1296,6 +1323,52 @@ $qustionBreak: 10520px;
         font-size: 16px;
         text-transform: none;
         padding: 16px 28px;
+    }
+    &__agreement {
+        margin-top: 20px;
+        margin-bottom: 5px;
+        &._error .letter__checkbox-lable::before {
+            box-shadow: 0 0 8px red;
+        }
+    }
+
+    &__checkbox-input {
+        display: none;
+        &:checked + .letter__checkbox-lable::after {
+            transform: scale(1);
+        }
+    }
+    &__checkbox-lable {
+        color: #707070;
+        font-size: 15px;
+        line-height: 20px;
+        //margin-bottom: 5px;
+        // margin-top: 7.5px;
+        display: flex;
+        position: relative;
+        cursor: pointer;
+        align-items: center;
+        &::before {
+            content: "";
+            align-self: flex-start;
+            flex: 0 0 24px;
+            height: 24px;
+            background-color: #ccc;
+            border-radius: 4px;
+            margin: 0 10px 0 0;
+        }
+        &::after {
+            transition: transform 0.5s ease 0s;
+            content: "";
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            background-color: #275988;
+            border-radius: 4px;
+            transform: scale(0);
+        }
     }
 }
 .qustion {

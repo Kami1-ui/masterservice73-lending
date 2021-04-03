@@ -1,4 +1,3 @@
-
 document.body.onload = function () {
     $('.load').toggleClass('preloader_done');
     $('body').toggleClass('lock');
@@ -27,11 +26,6 @@ $(document).ready(function () {
         $('.header__burger,.header__menu').removeClass('active');
         $('body').removeClass('lock');
     });
-    /*
-        $('.header__logo').click(function (event) {
-            $('.header__burger,.header__menu').toggleClass('active');
-            $('body').toggleClass('lock');
-        });*/
 
 });
 
@@ -190,27 +184,103 @@ $(document).ready(function () {
     });
 });
 
-var inputs = document.querySelectorAll('.letter__input-path');
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('form');
+    form.addEventListener('submit', formSend);
 
-Array.prototype.forEach.call(inputs, function (input) {
-    var label = input.nextElementSibling,
-        labelVal = label.innerHTML;
+    async function formSend(e) {
+        e.preventDefault();
 
-    input.addEventListener('change', function (e) {
-        var fileName = '';
-        if (this.files && this.files.length > 1) {
-            fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);
+        let error = formValidate(form);
+        let formData = new FormData(form);
+
+        //formData.append('image',formImage.files[0]);
+
+        if (error === 0) {
+            form.classList.add('_sending');
+            let response = await fetch('/sendmail.php', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                let result = await response.json();
+                alert(result.message);
+                //  formPreview.innerHTML = '';
+                editFileLable('Файл не выбран');
+                form.reset();
+                form.classList.remove('_sending')
+            } else {
+                alert('Ошибка');
+                form.classList.remove('_sending')
+            }
+
+
         } else {
-            fileName = e.target.value.split('\\').pop();
+            alert('Заполните обязательные поля ' + error)
         }
-        if (fileName)
-            label.querySelector('.path').innerHTML = fileName;
-        else
-            label.innerHTML = labelVal;
-    });
+    }
+
+    function formValidate(form) {
+        let error = 0;
+        let formReq = document.querySelectorAll('._req');
+
+        for (let index = 0; index < formReq.length; index++) {
+            const input = formReq[index];
+            formRemoveError(input);
+
+            if (input.classList.contains('_email')) {
+                if (emailTest(input)) {
+                    formAddrror(input);
+                    error++;
+                }
+            } else if (input.getAttribute("type") === "checkbox" && input.checked === false) {
+                formAddrror(input);
+                error++;
+            } else {
+                if (input.value === '') {
+                    formAddrror(input);
+                    error++;
+                }
+            }
+
+        }
+        return error;
+    }
+
+    function formAddrror(input) {
+        input.parentElement.classList.add('_error');
+        input.classList.add('_error');
+    }
+
+    function formRemoveError(input) {
+        input.parentElement.classList.remove('_error');
+        input.classList.remove('_error');
+    }
+
+    function emailTest(input) {
+        return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value)
+    }
+
+    const formFile = document.getElementById('formFile');
+    const formFileLable = formFile.nextElementSibling;
+
+    formFile.addEventListener('change', () => {
+        editFileLable(formFile.value);
+    })
+
+    function editFileLable(filePath) {
+        let fileName = filePath.split('\\').pop();
+        formFileLable.querySelector('.path').innerHTML = fileName;
+    }
+
 });
 
 
+
+
+
+//#endregion
 
 
 /*Переход на якорь*/

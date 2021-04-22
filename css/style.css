@@ -546,7 +546,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 52px 42px;
-  background: url(../img/back-angle.png) center/cover no-repeat;
   margin-bottom: 42px;
 }
 
@@ -573,7 +572,6 @@ body {
 @media (max-width: 767px) {
   .hello__logo-min {
     display: none;
-    background: url(../img/back-angle.png) 0 -2000px/cover no-repeat;
   }
 }
 
@@ -593,6 +591,15 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0 30px;
+}
+
+@media (max-width: 767px) {
+  .hello__caption {
+    padding: 0;
+    background: none;
+  }
 }
 
 .hello__lable {
@@ -604,6 +611,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .hello__lable .lg-text {
@@ -611,19 +619,12 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 12px;
-  line-height: 62px;
-  font-size: 87px;
+  font-size: 62px;
 }
 
 @media (max-width: 1290px) {
   .hello__lable .lg-text {
-    line-height: calc(42px + 20 * ((100vw - 320px) / 970));
-  }
-}
-
-@media (max-width: 1290px) {
-  .hello__lable .lg-text {
-    font-size: calc(51px + 36 * ((100vw - 320px) / 970));
+    font-size: calc(51px + 11 * ((100vw - 320px) / 970));
   }
 }
 
@@ -643,7 +644,7 @@ body {
 
 @media (max-width: 1290px) {
   .hello__lable .sm-text {
-    line-height: calc(24px + 15 * ((100vw - 320px) / 970));
+    line-height: calc(28px + 11 * ((100vw - 320px) / 970));
   }
 }
 
@@ -835,8 +836,8 @@ body {
 .carusel .slick-dots li button {
   border-radius: 50%;
   font-size: 0;
-  width: 27px;
-  height: 27px;
+  width: 32px;
+  height: 32px;
   border: 6px solid #fefefe;
   background-color: transparent;
   -webkit-transition: all 0.1s ease;

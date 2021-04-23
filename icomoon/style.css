@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?niq8n5');
-  src:  url('fonts/icomoon.eot?niq8n5#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?niq8n5') format('truetype'),
-    url('fonts/icomoon.woff?niq8n5') format('woff'),
-    url('fonts/icomoon.svg?niq8n5#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?mm6yxs');
+  src:  url('fonts/icomoon.eot?mm6yxs#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?mm6yxs') format('truetype'),
+    url('fonts/icomoon.woff?mm6yxs') format('woff'),
+    url('fonts/icomoon.svg?mm6yxs#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,66 +25,66 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-double-right:before {
+.icon-automation:before {
   content: "\e900";
 }
-.icon-home:before {
+.icon-clock:before {
   content: "\e901";
 }
-.icon-mail:before {
+.icon-coin-wallet:before {
   content: "\e902";
 }
-.icon-office-phone:before {
+.icon-contract:before {
   content: "\e903";
 }
-.icon-facebook:before {
+.icon-double-right:before {
   content: "\e904";
 }
-.icon-instagram:before {
+.icon-download:before {
   content: "\e905";
 }
-.icon-vk:before {
+.icon-drill:before {
   content: "\e906";
 }
-.icon-drill:before {
+.icon-engine:before {
   content: "\e907";
 }
-.icon-automation:before {
+.icon-facebook:before {
   content: "\e908";
 }
-.icon-secure:before {
+.icon-home:before {
   content: "\e909";
 }
-.icon-thumbs-up:before {
+.icon-instagram:before {
   content: "\e90a";
 }
-.icon-clock:before {
+.icon-left:before {
   content: "\e90b";
 }
-.icon-download:before {
+.icon-mail:before {
   content: "\e90c";
 }
-.icon-coin-wallet:before {
+.icon-office-phone:before {
   content: "\e90d";
 }
-.icon-contract:before {
+.icon-report-card:before {
   content: "\e90e";
 }
-.icon-engine:before {
+.icon-right:before {
   content: "\e90f";
 }
-.icon-report-card:before {
+.icon-secure:before {
   content: "\e910";
 }
-.icon-tools:before {
+.icon-thumbs-up:before {
   content: "\e911";
 }
-.icon-transit:before {
+.icon-tools:before {
   content: "\e912";
 }
-.icon-left:before {
+.icon-transit:before {
   content: "\e913";
 }
-.icon-right:before {
+.icon-vk:before {
   content: "\e914";
 }

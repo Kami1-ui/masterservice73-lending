@@ -25,7 +25,7 @@
                             <source srcset="img/logo-min.svg" media="(max-width: 450px)">
                             <source srcset="img/logo.svg" media="(max-width: 874px)">
                             <source srcset="img/logo.svg" media="(max-width: 1100px)">
-                            <source srcset="img/logo-min.svg" media="(max-width: 1350px)">
+                            <source srcset="img/logo-min.svg" media="(max-width: 1410px)">
                             <img src="img/logo.svg" alt="mastercervise73">
                         </picture>
                     </a>
@@ -36,38 +36,30 @@
                         <ul class="header__list">
                             <li class="header__item"><a href="#service">Услуги</a></li>
                             <li class="header__item"><a href="#price">Прайс</a></li>
-                            <li class="header__item"><a href="#benefits">Примущества</a></li>
+                            <li class="header__item"><a href="#benefits">О нас</a></li>
+                            <!-- <li class="header__item"><a href="#benefits">Примущества</a></li> -->
                             <li class="header__item"><a href="#fix">Мы ремонтируем</a></li>
                             <li class="header__item"><a href="#partners">Партнеры</a></li>
-                            <li class="header__item"><a href="#qustion">Задать вопрос</a></li>
+                            <li class="header__item qustion-item"><a href="#qustion">Форма для связи</a></li>
                             <li class="header__item"><a href="#contacts">Контакты</a></li>
+                            <li class="header__item qustion-btn"><a href="#qustion">Форма для связи</a></li>
                         </ul>
                     </nav>
                 </div>
             </header>
 
-            <section id="carusel" class="carusel">
+            <!--  <section id="carusel" class="carusel">
                 <div class="carusel__item  hello ibg">
                     <img src="img/carusel/slide-1.jpg" alt="slide-1">
                     <div class="container">
                         <div class="hello__body">
                             <div class="hello__caption carusel__caption">
-                                <!--<div class="hello__row">
-                                   
-                                    <div class="hello__logo-min">
-                                        <img src="img/logo-min.svg" alt="logo-min">
-                                    </div>
-                                </div>-->
-
                                 <div class=" hello__lable">
                                     <div class="lg-text">Ремонт</div>
                                     <div class="sm-text">электроинструмента <br>в Ульяновске
                                     </div>
                                 </div>
                                 <a class=" btn-red hello__btn" href="#price">Смотреть прайс</a>
-
-
-
                             </div>
                         </div>
                     </div>
@@ -105,8 +97,24 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
+            <div class=" hello">
+                <!--   ibg  <img src="img/carusel/slider-4.jpg" alt="slide-1"> -->
+                <div class="container">
+                    <div class="hello__body">
+                        <div class="hello__caption">
+                            <div class=" hello__lable">
+                                Ремонт электроинструмента в ульяновске
+                            </div>
+                            <div class="hello__description">
+                                <a class="hello__btn" href="#price">Смотреть прайс</a>
+                                <img src="./img/logo-min.svg" alt="logo-min">
+                            </div>
 
+                        </div>
+                    </div>
+                </div>
+            </div>
             <section id="service" class="service">
                 <div class="container">
                     <div class="title service__title">
@@ -115,35 +123,40 @@
                     <div class="service__row">
                         <div class="service__item">
                             <div class="service__item-body">
-                                <i class="icon-tools"></i>Услуги гарантийного и платного ремонта
+                                <i class="icon-tools"></i>
+                                <div class="service__text"> Услуги гарантийного и платного ремонта </div>
+
                             </div>
                         </div>
 
                         <div class="service__item">
                             <div class="service__item-body">
-                                <i class="icon-transit"></i>Запчасти в наличии и под заказ
+                                <i class="icon-transit"></i>
+                                <div class="service__text">Запчасти в наличии и под заказ</div>
                             </div>
                         </div>
                         <div class="service__item">
                             <div class="service__item-body">
-                                <i class="icon-report-card"></i>Диагностика и устранение дефектов
-                                изделия
+                                <i class="icon-report-card"></i>
+                                <div class="service__text">Диагностика и устранение дефектов изделия</div>
                             </div>
                         </div>
                         <div class="service__item">
                             <div class="service__item-body">
-                                <i class="icon-coin-wallet"></i>Платный ремонт с гарантией сервиса
+                                <i class="icon-coin-wallet"></i>
+                                <div class="service__text">Платный ремонт с гарантией сервиса</div>
                             </div>
                         </div>
                         <div class="service__item">
                             <div class="service__item-body">
-                                <i class="icon-contract"></i>Авторизированый сервис от фирм
-                                производителей
+                                <i class="icon-contract"></i>
+                                <div class="service__text">Авторизированый сервис от фирм производителей</div>
                             </div>
                         </div>
                         <div class="service__item">
                             <div class="service__item-body">
-                                <i class="icon-engine"></i>Перемотка электродвигателей
+                                <i class="icon-engine"></i>
+                                <div class="service__text">Перемотка электродвигателей</div>
                             </div>
                         </div>
                     </div>
@@ -151,62 +164,53 @@
             </section>
 
             <section id="price" class="price">
-                <div class="container">
-                    <div class="price__body">
-                        <div class="price__row">
-                            <div class="price__card">
-                                <div class="card-price">
-                                    <div class="card-price__row">
-                                        <div class="card-price__lable">
-                                            <i class="icon-clock"></i>09.05.2020
-                                        </div>
-                                        <div class="card-price__lable">
-                                            <a href="/price_engine.pdf" download>
-                                                <i class="icon-download"></i>скачать
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="card-price__title">
-                                        <a href="/price_engine.pdf" target="newframe">Двигатели</a>
-                                    </div>
-                                </div>
-                            </div>
+                <!-- <div class="container"> </div> -->
 
-                            <div class="price__card">
-                                <div class="card-price card-engine">
-                                    <div class="card-price__row">
-                                        <div class="card-price__lable">
-                                            <i class="icon-clock"></i>09.05.2020
-                                        </div>
-                                        <div class="card-price__lable">
-                                            <a href="/price.pdf" download>
-                                                <i class="icon-download"></i>скачать
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="card-price__title">
-                                        <a href="/price.pdf" target="newframe">Инструмент</a>
-                                    </div>
+                <div class="price__row">
+                    <div class="price__item engine">
+                        <div class="price__body">
+                            <div class="price__info">
+                                <div class="price__lable">
+                                    <i class="icon-clock"></i>09.05.2020
+                                </div>
+                                <div class="price__lable">
+                                    <a href="/price_engine.pdf" download>
+                                        <i class="icon-download"></i>скачать
+                                    </a>
                                 </div>
                             </div>
-                            <!--  <div class=" price__card">
-                                <a href="#qustion">
-                                    <div class="card-qustion">
-                                        <div class="card-qustion__title">Появились вопросы?</div>
-                                        <div class="card-qustion__lable">Напишите нам заполнив форму</div>
-                                        <i class="icon-double-right"></i>
-                                    </div>
-                                </a>
-                            </div> -->
+                            <div class="price__title">
+                                <a href="/price_engine.pdf" target="newframe">Электродвигатели</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="price__item tools">
+                        <div class="price__body">
+                            <div class="price__info">
+                                <div class="price__lable">
+                                    <i class="icon-clock"></i>09.05.2020
+                                </div>
+                                <div class="price__lable">
+                                    <a href="/price.pdf" download>
+                                        <i class="icon-download"></i>скачать
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="price__title">
+                                <a href="/price.pdf" target="newframe">Электроинструмент</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </section>
 
             <section id="benefits" class="benefits">
                 <div class="container">
                     <div class="title">
-                        <h2>Почему мы</h2>
+                        <h2>О нас</h2>
                     </div>
                     <div class="benefits__body">
                         <div class="benefits__item">
@@ -242,7 +246,7 @@
             </section>
 
             <section id="fix" class="fix">
-                <div class="title">
+                <div class="title fix__title">
                     <h2>Мы ремонтируем</h2>
                 </div>
                 <div class="container">
@@ -653,14 +657,14 @@
 
             </section>
             <section id="map" class="map">
-                <!--  <div class="map__gooole-map">
+                <div class="map__gooole-map">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2329.551350183225!2d48.28094441587375!3d54.27651398018446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415d3418a3498a03%3A0x6faa0e2f2e9c0e13!2z0JrQsNC80YvRiNC40L3RgdC60LDRjyDRg9C7LiwgNDAsINCj0LvRjNGP0L3QvtCy0YHQuiwg0KPQu9GM0Y_QvdC-0LLRgdC60LDRjyDQvtCx0LsuLCA0MzIwNTQ!5e0!3m2!1sru!2sru!4v1590165725322!5m2!1sru!2sru"
                         frameborder="0" style="border:0;" allowfullscreen="" width="100%" height="100%"
                         aria-hidden="false" tabindex="0"></iframe>
 
 
-                </div>-->
+                </div>
                 <!-- <div style="position:relative;overflow:hidden;"><a
                         href="https://yandex.ru/maps/org/mastercervise73/1780062637/?utm_medium=mapframe&utm_source=maps"
                         style="color:#eee;font-size:12px;position:absolute;top:0px;">Mastercervise73</a>
@@ -683,38 +687,47 @@
                     <div class="footer__contacts">
                         <div class="footer__item">
                             <i class="icon-home"></i>
-                            <div class="footer__lable">432060 Ульяновск, Камышинская 40 Дом Быта</div>
-                        </div>
-                        <div class="footer__item">
-                            <i class="icon-mail"></i>
-                            <div class="footer__lable">masterservice73@gmail.com</div>
+                            <div class="footer__lable adress">432060 Ульяновск, Камышинская 40 Дом Быта</div>
                         </div>
                         <div class="footer__item">
                             <i class="icon-office-phone"></i>
-                            <div class="footer__lable">8-902-3574029</div>
+                            <div class="footer__lable phone">+7-902-357-40-29</div>
                         </div>
+                        <div class="footer__item">
+                            <i class="icon-mail"></i>
+                            <div class="footer__lable mail">masterservice73@gmail.com</div>
+                        </div>
+
                         <!--Скайп masterservice73-->
                         <div class="footer__item">
                             <i class="icon-clock"></i>
                             <div class="footer__lable">c 9.00 до 18.00 в субботу до 14.00</div>
                         </div>
-                        <div class="footer__social">
+
+                    </div>
+                    <div class="footer__social">
+                        <div class="footer__lable">Mы в соц. сетях:</div>
+                        <div class="footer__social-icons">
                             <a href="#"><i class="icon-vk"></i></a>
-                            <a href="#"><i class="icon-instagram"></i></a>
                             <a href="#"><i class="icon-facebook"></i></a>
+                            <a href="#"><i class="icon-instagram"></i></a>
                         </div>
                     </div>
                     <div class="footer__driving">
+                        <div class="footer__lable">Схема проезда:</div>
                         <img src="img/driving.jpg" alt="схема проезда">
                     </div>
                 </div>
 
+                <div class="footer__bottom">
+                    <img src="./img/footer-logo.svg" alt="">
+                    <div class="footer__rights">
 
-                <div class="footer__rights">
+                        2020 All Rights Reserved
 
-                    2020 All Rights Reserved | Theme design by Kamil Kuzerov
-
+                    </div>
                 </div>
+
             </div>
         </footer>
     </div>

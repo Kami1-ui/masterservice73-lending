@@ -20,15 +20,18 @@
         <div class="content">
             <header class="header">
                 <div class="header__body">
-                    <a href="#carusel">
-                        <picture class="header__logo">
-                            <source srcset="img/logo-min.svg" media="(max-width: 450px)">
-                            <source srcset="img/logo.svg" media="(max-width: 874px)">
-                            <source srcset="img/logo.svg" media="(max-width: 1100px)">
-                            <source srcset="img/logo-min.svg" media="(max-width: 1410px)">
-                            <img src="img/logo.svg" alt="mastercervise73">
-                        </picture>
-                    </a>
+                    <div class="header__logo">
+                        <a href="#carusel">
+                            <picture class="header__logo">
+                                <source srcset="img/logo-min.svg" media="(max-width: 450px)">
+                                <source srcset="img/logo.svg" media="(max-width: 874px)">
+                                <source srcset="img/logo.svg" media="(max-width: 1100px)">
+                                <source srcset="img/logo-min.svg" media="(max-width: 1300px)">
+                                <img src="img/logo.svg" alt="mastercervise73">
+                            </picture>
+                        </a>
+                    </div>
+
                     <div class="header__burger">
                         <span></span>
                     </div>
@@ -36,7 +39,7 @@
                         <ul class="header__list">
                             <li class="header__item"><a href="#service">Услуги</a></li>
                             <li class="header__item"><a href="#price">Прайс</a></li>
-                            <li class="header__item"><a href="#benefits">О нас</a></li>
+                            <li class="header__item"><a href="#about">О нас</a></li>
                             <!-- <li class="header__item"><a href="#benefits">Примущества</a></li> -->
                             <li class="header__item"><a href="#fix">Мы ремонтируем</a></li>
                             <li class="header__item"><a href="#partners">Партнеры</a></li>
@@ -207,7 +210,7 @@
 
             </section>
 
-            <section id="benefits" class="benefits">
+            <!--  <section id="benefits" class="benefits">
                 <div class="container">
                     <div class="title">
                         <h2>О нас</h2>
@@ -243,10 +246,26 @@
                         </div>
                     </div>
                 </div>
+            </section> -->
+            <section id="about" class="about">
+                <div class="container">
+                    <div class="about__title title-italic">
+                        <h2>Немного о нас</h2>
+                    </div>
+                    <div class="about__body">
+                        <div class="about__icon">
+                            <i class="icon-about"></i>
+                        </div>
+                        <div class="about__text">
+                            МастерСервис73 был создан в 2001 году. Сегодня наше предприятие, обладающее многолетним
+                            опытом по ремонту всех видов электроинструмента является гарантийным авторизованным
+                            мультибрэндовым сервисным центром.
+                        </div>
+                    </div>
+                </div>
             </section>
-
             <section id="fix" class="fix">
-                <div class="title fix__title">
+                <div class="title fix__title title-italic">
                     <h2>Мы ремонтируем</h2>
                 </div>
                 <div class="container">
